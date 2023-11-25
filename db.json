@@ -27,11 +27,11 @@
       "name": "Product 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "price": 49.99,
-      "image": "/assets/product_2.jpg",
+      "image": "/React_Shopify/assets/product_2.jpg",
       "thumbnail": [
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg"
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg"
       ],
       "rating": 0,
       "sale": true,
@@ -43,11 +43,11 @@
       "name": "Product 2",
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       "price": 39.99,
-      "image": "/assets/product_1.jpg",
+      "image": "/React_Shopify/assets/product_1.jpg",
       "thumbnail": [
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg"
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg"
       ],
       "rating": 4,
       "sale": true,
@@ -59,11 +59,11 @@
       "name": "Product 3",
       "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
       "price": 49.99,
-      "image": "/assets/product_2.jpg",
+      "image": "/React_Shopify/assets/product_2.jpg",
       "thumbnail": [
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg"
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg"
       ],
       "rating": 0,
       "sale": false,
@@ -74,11 +74,11 @@
       "name": "Product 4",
       "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
       "price": 49.99,
-      "image": "/assets/product_1.jpg",
+      "image": "/React_Shopify/assets/product_1.jpg",
       "thumbnail": [
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg"
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg"
       ],
       "rating": 5,
       "sale": false,
@@ -89,11 +89,11 @@
       "name": "Product 5",
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       "price": 59.99,
-      "image": "/assets/product_1.jpg",
+      "image": "/React_Shopify/assets/product_1.jpg",
       "thumbnail": [
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg"
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg"
       ],
       "rating": 4,
       "sale": true,
@@ -105,11 +105,11 @@
       "name": "Product 6",
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       "price": 49,
-      "image": "/assets/product_2.jpg",
+      "image": "/React_Shopify/assets/product_2.jpg",
       "thumbnail": [
-        "/assets/product_2.jpg",
-        "/assets/product_1.jpg",
-        "/assets/product_2.jpg"
+        "/React_Shopify/assets/product_2.jpg",
+        "/React_Shopify/assets/product_1.jpg",
+        "/React_Shopify/assets/product_2.jpg"
       ],
       "rating": 5,
       "sale": true,
