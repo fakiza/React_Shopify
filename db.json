@@ -1,0 +1,127 @@
+{
+  "slider": [
+    {
+      "title": "Slider 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "./src/assets/carousel_images1.jpg"
+    },
+    {
+      "title": "Slider 2",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "image": "./src/assets/carousel_images_2.jpg"
+    },
+    {
+      "title": "Slider 3",
+      "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+      "image": "./src/assets/carousel_images_3.jpg"
+    },
+    {
+      "title": "Slider 4",
+      "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+      "image": "./src/assets/carousel_images_4.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": 49.99,
+      "image": "/src/assets/product_2.jpg",
+      "thumbnail": [
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg"
+      ],
+      "rating": 0,
+      "sale": true,
+      "salePrice":30.00,
+      "category": "kids"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "price": 39.99,
+      "image": "/src/assets/product_1.jpg",
+      "thumbnail": [
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg"
+      ],
+      "rating": 4,
+      "sale": true,
+      "salePrice":30.00,
+      "category": "men"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+      "price": 49.99,
+      "image": "/src/assets/product_2.jpg",
+      "thumbnail": [
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg"
+      ],
+      "rating": 0,
+      "sale": false,
+      "category": "women"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+      "price": 49.99,
+      "image": "/src/assets/product_1.jpg",
+      "thumbnail": [
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg"
+      ],
+      "rating": 5,
+      "sale": false,
+      "category": "kids"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "price": 59.99,
+      "image": "/src/assets/product_1.jpg",
+      "thumbnail": [
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg"
+      ],
+      "rating": 4,
+      "sale": true,
+      "salePrice":45.00,
+      "category": "men"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "price": 49,
+      "image": "/src/assets/product_2.jpg",
+      "thumbnail": [
+        "/src/assets/product_2.jpg",
+        "/src/assets/product_1.jpg",
+        "/src/assets/product_2.jpg"
+      ],
+      "rating": 5,
+      "sale": true,
+      "salePrice":39.00,
+      "category": "women"
+    }
+  ],
+  "categories": [
+    "all",
+    "men",
+    "women",
+    "kids"
+  ],
+  "cartItems":[ ]
+}

@@ -1,0 +1,51 @@
+/* Example CSS */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .modal-container {
+    width:768px;
+    z-index: 2;
+  }
+  
+  .modal-content {
+    position: relative;
+    padding:20px;
+  }
+  .quickImage{
+    height:400px ;
+    object-fit:cover;
+  }
+  
+  .modal-close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+
+  }
+  
+  .modal-close-btn:hover {
+   transform :scale(1.25);
+  }
+  .QuickImage .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: calc(70vh - 64px );
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .productSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 100px );
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
