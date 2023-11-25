@@ -55,7 +55,8 @@ const Cart = () => {
                       key={item.product.id}
                       className=" border-b border-gray-300"
                     >
-                      <td className="flex items-center space-x-4 p-2">
+                      <td className="  p-2">
+                      <div className="flex items-center space-x-4">
                         <Link to={`/productDetails/${item.product.id}`}>
                           <img
                             src={item.product.image}
@@ -63,7 +64,7 @@ const Cart = () => {
                             className=" w-12 h-12 object-cover rounded "
                           />
                         </Link>
-                        <div>
+                        
                           <p className="text-lg font-semibold">
                             {item.product.name}
                           </p>
@@ -88,7 +89,7 @@ const Cart = () => {
                       </td>
                       <td className="py-2">${item.product.price}</td>
                       <td className="py-2">
-                        ${item.product.price * item.quantity}
+                        ${(item.product.price * item.quantity).toFixed(2)}
                       </td>
                       <td className="py-2">
                         <Tooltip

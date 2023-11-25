@@ -17,25 +17,53 @@ import { CartProvider } from './components/routes/Cart/CartContext';
 import { QuickViewProvider } from './components/Modal/QuickViewContext';
 import ProductsList from './components/Products/ProductList';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Root />} errorElement={<NotFound/>} >
-         <Route path="/" element={<Home />} />
-         <Route path="/about" element={<About/>} />
-         <Route path="/contact" element={<Contact/>} />
-         <Route path="/blog" element={<Blog/>} />
-         <Route path="/cart" element={<Cart />} />
-         <Route path="/sign-in" element={<SignIn/>} />
-         <Route path="/sign-up" element={<SignUp/>} />
-         <Route path="/lost-password" element={<ForgotPassword/>} />
-         <Route path="/reset-password" element={<ResetPassword/>} />
-         <Route path="/productlist" element={<ProductsList/>} />
-         <Route path="/productDetails/:id" element={<ProductDetail/>} />
-         <Route path="/category/:categoryParam" element={<ProductsList/>} />
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route basename="/React_Shopify" element={<Root />} errorElement={<NotFound/>} >
+//          <Route index path='/' element={<Home />} />
+//          <Route path="/about" element={<About/>} />
+//          <Route path="/contact" element={<Contact/>} />
+//          <Route path="/blog" element={<Blog/>} />
+//          <Route path="/cart" element={<Cart />} />
+//          <Route path="/sign-in" element={<SignIn/>} />
+//          <Route path="/sign-up" element={<SignUp/>} />
+//          <Route path="/lost-password" element={<ForgotPassword/>} />
+//          <Route path="/reset-password" element={<ResetPassword/>} />
+//          <Route path="/productlist" element={<ProductsList/>} />
+//          <Route path="/productDetails/:id" element={<ProductDetail/>} />
+//          <Route path="/category/:categoryParam" element={<ProductsList/>} />
+         
       
-    </Route>
-  )
-)
+//     </Route>
+//   )
+// );
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    errorElement:<NotFound/>,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'about', element: <About /> },
+      { path: 'contact', element: <Contact /> },
+      { path: 'blog', element: <Blog /> },
+      { path: 'cart', element: <Cart /> },
+      { path: 'sign-in', element: <SignIn /> },
+      { path: 'sign-up', element: <SignUp /> },
+      { path: 'lost-password', element: <ForgotPassword /> },
+      { path: 'reset-password', element: <ResetPassword /> },
+      { path: 'productlist', element: <ProductsList /> },
+      { path: 'productDetails/:id', element: <ProductDetail /> },
+      { path: 'category/:categoryParam', element: <ProductsList /> },
+    ],
+  },
+],
+{basename:"/React_Shopify/"}
+);
+
+// Create the router using createRouterFromElement
 
 const theme = createTheme({
   palette:{

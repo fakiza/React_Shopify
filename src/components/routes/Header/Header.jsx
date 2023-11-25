@@ -12,11 +12,11 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useCart } from "../Cart/CartContext";
 
 export default function Header() {
-  const { data: category } = useApiData("http://localhost:4000/categories");
+  const { categories: category } = useApiData("/db.json");
   const { totalCartItems } = useCart();
   const [isOpen, setIsOpen] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
-  console.log(totalCartItems);
+  
   const handleClick = () => {
     setIsOpen(!isOpen);
   };

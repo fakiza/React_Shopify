@@ -22,16 +22,17 @@ import { useCart } from "../routes/Cart/CartContext";
 import DisplayProducts from "./displayProduct";
 const ProductDetail = () => {
   const { id } = useParams();
-  const { data: products } = useApiData(`http://localhost:4000/products/${id}`);
+  const { products } = useApiData('/db.json');
+  const product = products?.find((product) => product.id === Number(id));
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("1");
   const [rate, setRate] = useState(0);
-  const { cartItems, addToCart, incrementQuantity, decrementQuantity } =
+  const { addToCart} =
     useCart();
 
-  const currentQuantity = products
-    ? cartItems.find((item) => item.product.id === products.id)?.quantity || 0
-    : 0;
+  // const currentQuantity = product
+  //   ? cartItems.find((item) => item.product.id === product.id)?.quantity || 0
+  //   : 0;
   const [item,setItem]= useState(1);
   
   const handleClose = (event, reason) => {
@@ -41,7 +42,7 @@ const ProductDetail = () => {
     setOpen(false);
   };
   const handleAddToCart = () => {
-    addToCart({ ...products, quantity: currentQuantity });
+    addToCart({ ...product, quantity: item });
     setOpen(true);
     // You can optionally provide feedback to the user, like showing a success message.
   };
@@ -63,7 +64,7 @@ const ProductDetail = () => {
     setRate(newValue);
   };
   return (
-    products && (
+    product && (
       <>
         <div className="container  mx-auto my-5">
           <div className="flex">
@@ -78,8 +79,8 @@ const ProductDetail = () => {
                 modules={[Pagination, Navigation]}
                 className="productSwiper"
               >
-                {products.thumbnail &&
-                  products.thumbnail.map((slider, index) => (
+                {product.thumbnail &&
+                  product.thumbnail.map((slider, index) => (
                     <SwiperSlide key={index}>
                       <img src={slider} alt="image" />
                     </SwiperSlide>
@@ -87,12 +88,12 @@ const ProductDetail = () => {
               </Swiper>
             </div>
             <div className="w-1/2">
-              <h2 className="text-3xl pb-2">{products.name}</h2>
+              <h2 className="text-3xl pb-2">{product.name}</h2>
               <p className="text-2xl font-bold pb-2">
-                ${products.price}{" "}
+                ${product.price}{" "}
                 <span className="text-xl font-normal">+Free Shipping</span>
               </p>
-              <p className="pb-2">{products.description}</p>
+              <p className="pb-2">{product.description}</p>
               <div className="flex space-x-4 my-4">
                 {/* {!!currentQuantity && ( */}
                   <div className="flex">
@@ -129,7 +130,7 @@ const ProductDetail = () => {
                 </div>
               </div>
               <Rating
-                value={products.rating}
+                value={product.rating}
                 icon={<StarIcon fontSize="inherit" />}
                 readOnly
               />
@@ -156,10 +157,10 @@ const ProductDetail = () => {
                   centered
                 >
                   <Tab label="Description" value="1" />
-                  <Tab label={`Reviews (${products.rating})`} value="2" />
+                  <Tab label={`Reviews (${product.rating})`} value="2" />
                 </TabList>
               </Box>
-              <TabPanel value="1">{products.description}</TabPanel>
+              <TabPanel value="1">{product.description}</TabPanel>
               <TabPanel value="2">
                 <div className="product_review">
                   <div className="py-4 text-center">
@@ -168,7 +169,7 @@ const ProductDetail = () => {
                   <div className="border p-4">
                     <div>
                       <h1 className="flex items-center text-2xl ">
-                        Be the First to review <p>"{products.name}"</p>
+                        Be the First to review <p>"{product.name}"</p>
                       </h1>
                       <p>
                         Your Email address will not be published, required
@@ -234,13 +235,13 @@ const ProductDetail = () => {
                     </div>
                   </div>
                 </div>
-                {products.rating != 0 && (
+                {product.rating != 0 && (
                   <div className="border p-4  ">
                     <div className="flex space-x-2 ">
                       <h1>Product Rating : </h1>
                       <Rating
                         id="rating"
-                        value={products.rating}
+                        value={product.rating}
                         icon={<StarIcon fontSize="inherit" />}
                         readOnly
                       />
@@ -257,7 +258,7 @@ const ProductDetail = () => {
                         </p>
                         <Rating
                           id="rating"
-                          value={products.rating}
+                          value={product.rating}
                           icon={<StarIcon fontSize="inherit" />}
                           readOnly
                         />
@@ -272,7 +273,7 @@ const ProductDetail = () => {
                         </p>
                         <Rating
                           id="rating"
-                          value={products.rating}
+                          value={product.rating}
                           icon={<StarIcon fontSize="inherit" />}
                           readOnly
                         />

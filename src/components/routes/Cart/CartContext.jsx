@@ -22,7 +22,6 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
   }, [cartItems]);
 
-  console.log(totalCartItems);
 
   const addToCart = (product) => {
     const existingItem = cartItems.find(

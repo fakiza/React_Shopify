@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useApiData = (url) => {
-  const [data, setData] = useState(null);
+  const [products, setProducts] = useState(null);
+  const [sliders, setSliders] = useState(null);
+  const [categories, setCategories] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
@@ -10,7 +12,9 @@ const useApiData = (url) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
-        setData(response.data);
+        setProducts(response.data.products);
+        setSliders(response.data.slider);
+        setCategories(response.data.categories);
       } catch (error) {
         setError(error);
       } finally {
@@ -23,7 +27,7 @@ const useApiData = (url) => {
     
   }, [url]);
 
-  return { data, loading, error};
+  return { products,sliders,categories, loading, error};
 };
 
 export default useApiData;

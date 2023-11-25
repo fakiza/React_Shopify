@@ -7,7 +7,7 @@ import { useCart } from "../routes/Cart/CartContext";
 const DisplayProducts = ({ display }) => {
   const { quickViewData, openQuickView, closeQuickView } = useQuickView();
   const { addToCart } = useCart();
-  const {data: products,loading,error,} = useApiData("http://localhost:4000/products");
+  const {products ,loading,error,} = useApiData("/db.json");
 
   if (!products) {
     return <div>Loading...</div>; // Or handle the loading state in your preferred way

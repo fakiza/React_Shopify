@@ -9,7 +9,7 @@ import { useCart } from "../routes/Cart/CartContext";
 import { useQuickView } from "../Modal/QuickViewContext";
 
 const ProductsList = () => {
-  const {data: products,loading,error,} = useApiData("http://localhost:4000/products");
+  const {products,loading,error,} = useApiData("/db.json");
   const {quickViewData, openQuickView,closeQuickView } = useQuickView();
   const { addToCart } = useCart();
   const [category, setCategory] = useState("All");
