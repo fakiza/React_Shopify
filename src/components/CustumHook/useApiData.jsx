@@ -11,7 +11,7 @@ const useApiData = (url) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(url);
+        const response = await axios.get('/React_Shopify/db.json');
         setProducts(response.data.products);
         setSliders(response.data.slider);
         setCategories(response.data.categories);

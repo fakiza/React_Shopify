@@ -8,7 +8,7 @@ const ProductFilter = ({
   selectedSortType,
   onSortTypeChange,
 }) => {
-  const { categories:data } = useApiData("/db.json");
+  const { categories:data } = useApiData();
 
   return (
     <div>

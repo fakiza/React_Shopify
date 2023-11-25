@@ -22,7 +22,7 @@ import { useCart } from "../routes/Cart/CartContext";
 import DisplayProducts from "./displayProduct";
 const ProductDetail = () => {
   const { id } = useParams();
-  const { products } = useApiData('/db.json');
+  const { products } = useApiData();
   const product = products?.find((product) => product.id === Number(id));
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("1");

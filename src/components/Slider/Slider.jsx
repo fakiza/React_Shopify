@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import useApiData from '../CustumHook/useApiData';
 export default function Slider() {
-  const {sliders} = useApiData('/db.json')
+  const {sliders} = useApiData()
 
   return (
     <>

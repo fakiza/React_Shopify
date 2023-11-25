@@ -1,7 +1,7 @@
-import parallax_images from "../../../assets/carousel_images1.jpg";
+import parallax_images from "/assets/carousel_images1.jpg";
 import { Parallax } from "../../Banners/paralellax";
 import GridComponent from "../../Banners/GridComponent";
-import grid_img from "../../../assets/carousel_images_3.jpg";
+import grid_img from "/assets/carousel_images_3.jpg";
 import { Button } from "@mui/material";
 import DisplayProducts from "../../Products/displayProduct";
 import Slider from "../../Slider/Slider";

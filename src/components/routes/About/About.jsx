@@ -1,6 +1,6 @@
-import parallax_images from "../../../assets/carousel_images_3.jpg";
-import grid_img from "../../../assets/carousel_images1.jpg";
-import carousel_images_2 from "../../../assets/carousel_images_2.jpg";
+import parallax_images from "/assets/carousel_images_3.jpg";
+import grid_img from "/assets/carousel_images1.jpg";
+import carousel_images_2 from "/assets/carousel_images_2.jpg";
 import Banner from "../../Banners/Banner";
 import { Parallax } from "../../Banners/paralellax";
 import GridComponent from "../../Banners/GridComponent";
