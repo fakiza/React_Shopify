@@ -3,22 +3,22 @@
     {
       "title": "Slider 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "/src/assets/carousel_images1.jpg"
+      "image": "/React_Shopify/src/assets/carousel_images1.jpg"
     },
     {
       "title": "Slider 2",
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-      "image": "/src/assets/carousel_images_2.jpg"
+      "image": "/React_Shopify/src/assets/carousel_images_2.jpg"
     },
     {
       "title": "Slider 3",
       "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
-      "image": "/src/assets/carousel_images_3.jpg"
+      "image": "/React_Shopify/src/assets/carousel_images_3.jpg"
     },
     {
       "title": "Slider 4",
       "description": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
-      "image": "/src/assets/carousel_images_4.jpg"
+      "image": "/React_Shopify/src/assets/carousel_images_4.jpg"
     }
   ],
   "products": [
