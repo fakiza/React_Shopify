@@ -67,3 +67,16 @@
    .image-container:hover:before {
     transform: scale(1.1);
    }
+   .product_image_Swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 100px );
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product_image_Swiper.swiper-slide img {
+      height: auto !important;  ;
+    }
+  }

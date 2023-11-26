@@ -20,6 +20,7 @@ import { useParams } from "react-router-dom";
 import useApiData from "../CustumHook/useApiData";
 import { useCart } from "../routes/Cart/CartContext";
 import DisplayProducts from "./displayProduct";
+
 const ProductDetail = () => {
   const { id } = useParams();
   const { products } = useApiData();
@@ -66,9 +67,9 @@ const ProductDetail = () => {
   return (
     product && (
       <>
-        <div className="container  mx-auto my-5">
-          <div className="flex">
-            <div className="w-1/2 pr-6">
+        <div className=" mx-5 my-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "#000",
@@ -77,7 +78,7 @@ const ProductDetail = () => {
                 pagination={true}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="productSwiper"
+                className="product_image_Swiper"
               >
                 {product.thumbnail &&
                   product.thumbnail.map((slider, index) => (
@@ -87,7 +88,7 @@ const ProductDetail = () => {
                   ))}
               </Swiper>
             </div>
-            <div className="w-1/2">
+            <div className="">
               <h2 className="text-3xl pb-2">{product.name}</h2>
               <p className="text-2xl font-bold pb-2">
                 ${product.price}{" "}
@@ -287,7 +288,7 @@ const ProductDetail = () => {
         </div>
         <div className="container mx-auto related_products my-10">
           <div className="pb-10 ">
-            <h1 className="text-4xl ">Related Products</h1>
+            <h1 className="text-4xl mx-2 text-center">Related Products</h1>
           </div>
           <DisplayProducts display="sale" />
         </div>
